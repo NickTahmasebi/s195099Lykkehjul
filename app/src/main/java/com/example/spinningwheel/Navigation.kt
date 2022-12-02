@@ -92,12 +92,15 @@ fun MainScreen(navController: NavController){
         Button(onClick = {
                navController.navigate(Screen.DetailScreen.route)
         },
-        modifier = Modifier.align(Alignment.CenterHorizontally)) {
+        modifier = Modifier.padding(vertical = 30.dp).align(Alignment.CenterHorizontally)) {
             Text(text = "Start Game")
         }
 
 
-
+        Text(text = "Game Rules: "  )
+        Text(text = "\n1) You have to spin before you guess, otherwise the game will crash, this will be patched in the next update ")
+        Text(text = "\n2) You must guess after your spin, and after your guess you must spin again! (Dont cheat)")
+        Text(text = "\n3) I understand that this versions architecture is very bad, due to problems with my computer and Andriod Studio, Model - View - Controller has not been followed. (Will be patched next update) ")
     }
 }
 
@@ -181,8 +184,8 @@ fun DetailScreen(navController: NavController){
             Text(text = "Spin")
         }
 
-        Text(text = category, modifier = Modifier.align(CenterHorizontally))
-        Text(text = word, modifier = Modifier.align(CenterHorizontally))
+        Text(text = "Category: " +category, modifier = Modifier.align(CenterHorizontally))
+        //Text(text = word, modifier = Modifier.align(CenterHorizontally))
         Text(text = cur, modifier = Modifier.align(CenterHorizontally))
 
 
