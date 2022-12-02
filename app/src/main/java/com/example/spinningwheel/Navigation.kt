@@ -100,7 +100,7 @@ fun MainScreen(navController: NavController){
         Text(text = "Game Rules: "  )
         Text(text = "\n1) You have to spin before you guess, otherwise the game will crash, this will be patched in the next update ")
         Text(text = "\n2) You must guess after your spin, and after your guess you must spin again! (Dont cheat)")
-        Text(text = "\n3) You can guess the whole word when you are ready!")
+        Text(text = "\n3) You can guess the whole word when you are ready! ")
         Text(text = "\n4) I understand that this versions architecture is very bad, due to problems with my computer and Andriod Studio, Model - View - Controller has not been followed. (Will be patched next update) ")
     }
 }
